@@ -131,7 +131,7 @@ def train(input_config, output_config, model_config):
             'model': model.state_dict(),
             'optimizer': optimizer.state_dict(),
             'scheduler': scheduler.state_dict(),
-            }, "./models")
+            }, "./models.pt")
 
 if __name__ == "__main__":
     train(input_config, output_config, model_config)
